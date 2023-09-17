@@ -1,0 +1,48 @@
+Host homelab-001
+	HostName 192.168.1.150
+	IdentityFile "~/Dropbox/Key Pairs/homelab"
+	User homelab
+
+Host homelab-002
+	HostName 192.168.1.151
+	IdentityFile "~/Dropbox/Key Pairs/homelab"
+	User homelab
+
+Host homelab-003
+	HostName 192.168.1.152
+	IdentityFile "~/Dropbox/Key Pairs/homelab"
+	User homelab
+
+Host homelab-004
+	HostName 192.168.1.247
+	IdentityFile "~/Dropbox/Key Pairs/homelab"
+	User homelab
+
+Host 360radar
+	HostName 192.168.1.226
+	User pi
+
+Host homeserver
+	HostName 192.168.1.200
+	User semms
+
+Host unifi-controller
+	HostName unifi.simonemms.com
+	IdentityFile "~/Dropbox/Key Pairs/Civo/unifi"
+	User root
+
+Host bastion
+	HostName portal.simonemms.com
+	IdentityFile "~/Dropbox/Infrastructure/bastion/bastion"
+	User bastion
+	Port 2244
+
+Host bastion-internal
+	HostName 192.168.1.9
+	IdentityFile "~/Dropbox/Infrastructure/bastion/bastion"
+	User bastion
+	Port 22
+
+Host ttn-gateway
+	HostName 192.168.3.12
+	User ttn
