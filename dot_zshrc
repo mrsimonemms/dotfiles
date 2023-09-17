@@ -89,8 +89,6 @@ PROMPT=${PROMPT}$'%{$fg[white]%}$(tf_prompt_info)%{$reset_color%} '
 
 # Add /bin directory to PATH
 export PATH="${PATH}:${HOME}/bin"
-# Add Jetbrains Toolbox to PATH
-export PATH="${PATH}:${HOME}/.local/share/JetBrains/Toolbox/scripts"
 
 # Set KUBE_EDITOR
 export KUBE_EDITOR="nano"
@@ -116,9 +114,7 @@ mkdir -p ~/.npm-packages/bin
 export PATH=~/.npm-packages/bin:$PATH
 export NODE_PATH=~/.npm-packages/lib/node_modules
 
-export KUBECTL_VSPHERE_PASSWORD=PZkfxsM2K6g3jqGu
-
-# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 #################################
 # End of pre-load customisation #
@@ -162,7 +158,3 @@ eval "$(atuin init zsh)"
 ##################################
 # End of post-load customisation #
 ##################################
-
-eval "$(atuin init zsh)"
-
-eval "$(atuin init zsh)"
