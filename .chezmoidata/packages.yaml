@@ -3,6 +3,7 @@ packages:
     apt:
       - build-essential
       - curl
+      - direnv
       - file
       - gcc
       - git
