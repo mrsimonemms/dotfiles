@@ -1,5 +1,9 @@
 packages:
   linux:
     apt:
+      - build-essential
       - curl
+      - file
+      - gcc
       - git
+      - procps
