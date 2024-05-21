@@ -1,11 +1,14 @@
 {
   "image": "ghcr.io/mrsimonemms/devcontainers/full",
   "name": "devcontainer",
-  "features": {},
+  "features": {
+    "ghcr.io/rio/features/chezmoi:1": {}
+  },
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-vscode.makefile-tools"
+        "ms-vscode.makefile-tools",
+        "tamasfe.even-better-toml"
       ],
       "settings": {}
     }
