@@ -19,6 +19,8 @@ repos:
       - id: end-of-file-fixer
       - id: trailing-whitespace
       - id: check-toml
+      - id: check-executables-have-shebangs
+      - id: check-shebang-scripts-are-executable
   - repo: https://github.com/compilerla/conventional-pre-commit
     rev: v3.2.0
     hooks:
@@ -43,3 +45,7 @@ repos:
       - id: pretty-format-toml
         args:
           - --autofix
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.10.0.1
+    hooks:
+      - id: shellcheck
