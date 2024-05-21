@@ -8,7 +8,8 @@
     "vscode": {
       "extensions": [
         "ms-vscode.makefile-tools",
-        "tamasfe.even-better-toml"
+        "tamasfe.even-better-toml",
+        "jinliming2.vscode-go-template"
       ],
       "settings": {}
     }

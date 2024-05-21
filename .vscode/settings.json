@@ -7,5 +7,8 @@
     "https://json.schemastore.org/github-workflow.json": [
       ".github/workflows/*.{yml,yaml}"
     ]
+  },
+  "files.associations": {
+    "*sh.tmpl": "shellscript"
   }
 }
