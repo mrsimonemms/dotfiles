@@ -1,0 +1,23 @@
+[commit]
+	gpgsign = true
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[user]
+	name = Simon Emms
+	email = simon@simonemms.com
+	signingkey = A23F799028EC1F9E
+[alias]
+	cp = cherry-pick
+	co = checkout
+	ci = commit
+	st = status
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an - %ae>%Creset' --abbrev-commit
+	rb = rebase
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[push]
+	autoSetupRemote = true
