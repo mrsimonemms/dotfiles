@@ -7,3 +7,5 @@ packages:
       - gcc
       - git
       - procps
+    snap:
+      - diff-so-fancy

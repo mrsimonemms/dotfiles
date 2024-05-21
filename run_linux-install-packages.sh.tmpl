@@ -6,4 +6,10 @@ echo "Installing packages"
 sudo apt-get update
 
 sudo apt-get install -y {{ range .packages.linux.apt }}{{ . }} {{ end }}
+
+# Although you can install multiple snaps on one line, this errors if already installed
+{{- range .packages.linux.snap }}
+sudo snap install {{ . }}
+{{- end }}
+
 {{- end }}
