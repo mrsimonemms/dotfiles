@@ -152,6 +152,9 @@ source $ZSH/oh-my-zsh.sh
 # Post-load customisation #
 ###########################
 
+# Load Atuin for syncing your shell
+eval "$(atuin init zsh)"
+
 ##################################
 # End of post-load customisation #
 ##################################

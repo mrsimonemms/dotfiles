@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e
+
+echo "Install Atuin"
+which atuin || bash <(curl https://raw.githubusercontent.com/atuinsh/atuin/main/install.sh)
+
+atuin login \
+  --username {{ (bitwarden "item" "atuin.sh").login.username }} \
+  --password {{ (bitwarden "item" "atuin.sh").login.password }} \
+  --key '{{ (bitwardenFields "item" "atuin.sh").key.value }}'
+
+atuin import bash || true
+atuin import zsh
+atuin sync
