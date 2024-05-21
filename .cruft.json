@@ -1,0 +1,17 @@
+{
+  "template": "https://github.com/mrsimonemms/new",
+  "commit": "8da4d4a5210d08e1ec5aae3aad02a602b06dc321",
+  "checkout": "main",
+  "context": {
+    "cookiecutter": {
+      "project_name": "dotfiles",
+      "description": "My dotfiles setup",
+      "author": "Simon Emms <simon@simonemms.com>",
+      "_template": "https://github.com/mrsimonemms/new"
+    }
+  },
+  "directory": "blank",
+  "skip": [
+    ".git"
+  ]
+}
