@@ -6,6 +6,8 @@ packages:
       - file
       - gcc
       - git
+      - jq
       - procps
     snap:
       - diff-so-fancy
+      - yq
