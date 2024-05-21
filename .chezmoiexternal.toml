@@ -1,0 +1,13 @@
+[".oh-my-zsh"]
+exact = true
+refreshPeriod = "168h"
+stripComponents = 1
+type = "archive"
+url = "https://github.com/ohmyzsh/ohmyzsh/archive/master.tar.gz"
+
+[".oh-my-zsh/custom/plugins/zshmarks"]
+exact = true
+refreshPeriod = "168h"
+stripComponents = 1
+type = "archive"
+url = "https://github.com/jocelynmallon/zshmarks/archive/refs/heads/master.tar.gz"
