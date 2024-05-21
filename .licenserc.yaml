@@ -12,6 +12,7 @@ header:
     - "**/.gitkeep"
     - "dot_*"
     - "**/*.tmpl"
+    - "bin/*"
   comment: on-failure
   language:
     Go:
